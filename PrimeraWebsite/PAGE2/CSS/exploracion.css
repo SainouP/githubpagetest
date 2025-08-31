@@ -1,0 +1,151 @@
+/* Estilo general del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;  /* Fondo por defecto */
+    background-image: url('/PrimeraWebsite/FONDOS/fondo2.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    margin: 0;
+}
+/* Barra lateral */
+.sidebar {
+    position: fixed;
+    left: auto;
+    background-color: rgba(22, 22, 46, 0.7);
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    text-align: start;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Estilo del botón 3D */
+.btn-3d {
+    position: absolute;
+    top: 380px;             /* Ajusta la posición vertical */
+    left: auto;           /* Ajusta la posición horizontal */
+    font-size: 18px;
+    background-color: #00bcd4;  /* Fondo azul */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Cambiar color del botón cuando el mouse pasa sobre él */
+.btn-3d:hover {
+    background-color: #0097a7; /* Cambia a un color más oscuro cuando el mouse pasa sobre el botón */
+}
+
+/* Estilo del botón 3D */
+.btn-Fijo {
+    position: absolute;
+    top: 380px;             /* Ajusta la posición vertical */
+    left: auto;           /* Ajusta la posición horizontal */
+    font-size: 18px;
+    background-color: #00bcd4;  /* Fondo azul */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Cambiar color del botón cuando el mouse pasa sobre él */
+.btn-Fijo:hover {
+    background-color: #0097a7; /* Cambia a un color más oscuro cuando el mouse pasa sobre el botón */
+}
+
+.sidebar h2 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+/* Estilo para el contenedor del modelo 3D */
+#3d-model-container {
+    position: absolute;
+    top: 50%;  /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el contenedor al centro exacto */
+    width: 800px;  /* Ancho fijo del renderizado */
+    height: 600px; /* Altura fija del renderizado */
+    background-color: #111; /* Fondo oscuro */
+    z-index: 1;  /* Asegura que esté por encima de otros elementos */
+}
+
+
+/* Mensaje en la parte inferior */
+#interaction-message {
+    position: fixed;
+    bottom: 20px; /* Coloca el mensaje en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el mensaje horizontalmente */
+    background-color: rgba(22, 22, 46, 0.7);
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    max-width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#interaction-message a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#interaction-message a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de inicio */
+.btn-inicio {
+    position: absolute;
+    top: 20px;      /* Ajusta la posición vertical */
+    left: 90%;     /* Ajusta la posición horizontal */
+    font-size: 18px;
+    background-color: #00bcd4;  /* Fondo azul */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+/* Cambiar color del botón cuando el mouse pasa sobre él */
+.btn-inicio:hover {
+    background-color: #0097a7; /* Cambia a un color más oscuro cuando el mouse pasa sobre el botón */
+}
